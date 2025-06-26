@@ -18,22 +18,19 @@
             <dxc:Series3DStorage>
                 <dxc:Series3D DisplayName="Series 1">
                     <dxc:Series3D.View>
-                        <dxc:Point3DSeriesView>
-                            <dxc:Point3DSeriesView.MarkerModel>
-                                <dxc:Marker3DSpherePointModel SphereDetalizationLevel="Low"/>
-                            </dxc:Point3DSeriesView.MarkerModel>
-                            <dxc:Point3DSeriesView.Colorizer>
-                                <dxc:RangeColorizer3D RangeStops="0 1 2 3 4" 
-                                                      ApproximateColors="True">
-                                    <dxc:RangeColorizer3D.ValueProvider>
-                                        <dxc:ColorObjectValueProvider3D/>
-                                    </dxc:RangeColorizer3D.ValueProvider>
-                                    <dxc:RangeColorizer3D.Palette>
-                                        <dxc:YellowPalette/>
-                                    </dxc:RangeColorizer3D.Palette>
-                                </dxc:RangeColorizer3D>
-                            </dxc:Point3DSeriesView.Colorizer>
-                        </dxc:Point3DSeriesView>
+                        <dxc:SurfaceSeriesView>
+                            <dxc:SurfaceSeriesView.FillStyle>
+                                <dxc:GradientFillStyle LegendTextPattern="{}{V}">
+                                    <dxc:GradientFillStyle.ColorStops>
+                                        <dxc:ColorStop Color="#FF4472C4" Offset="0%"/>
+                                        <dxc:ColorStop Color="#FF5B9BD5" Offset="25%"/>
+                                        <dxc:ColorStop Color="#FF70AD47" Offset="50%"/>
+                                        <dxc:ColorStop Color="#FFFFC000" Offset="75%"/>
+                                        <dxc:ColorStop Color="#FFED7D31" Offset="100%"/>
+                                    </dxc:GradientFillStyle.ColorStops>
+                                </dxc:GradientFillStyle>
+                            </dxc:SurfaceSeriesView.FillStyle>
+                        </dxc:SurfaceSeriesView>
                     </dxc:Series3D.View>
                     <dxc:SeriesPoint3DDataSourceAdapter DataSource="{Binding Stars}" 
                                                         XArgumentDataMember="X" 

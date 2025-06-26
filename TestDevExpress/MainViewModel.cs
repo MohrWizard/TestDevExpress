@@ -18,17 +18,23 @@ namespace TestDevExpress
 
         private ObservableCollection<Star> collection1 =
             [
-            new Star(1, 1, 1,1),
-            new Star(2, 2, 2, 2),
-            new Star(3, 3, 3, 3),
-            new Star(4, 4, 4,4),
+            new Star(1, 1, 1, 1),
+            new Star(2, 2, 2, 1),
+            new Star(0, 2, 2, 1),
+            new Star(3, 3, 3, 1),
+            new Star(0, 3, 3, 1),
+            new Star(4, 4, 4, 1),
+            new Star(0, 4, 4, 1),
             ];
         private ObservableCollection<Star> collection2 =
              [
-            new Star(1, 1, 1,4),
-            new Star(2, 2, 1,4),
-            new Star(3, 3, 1,4),
-            new Star(4, 4, 1,4),
+            new Star(1, 1, 1, 4),
+            new Star(2, 2, 1, 4),
+            new Star(0, 2, 1, 4),
+            new Star(3, 3, 1, 4),
+            new Star(0, 3, 1, 4),
+            new Star(4, 4, 1, 4),
+            new Star(0, 4, 1, 4),
             ];
 
         public MainViewModel()
